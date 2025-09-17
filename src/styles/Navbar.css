@@ -1,0 +1,38 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    transition: .5s;
+    z-index: 9999;
+}
+
+nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav  {
+    color: var(--bg-color);
+}
+
+.logo {
+    font-family: "Poppins", serif;
+    color: var(--bg-color);
+    font-size: 2rem;
+    font-weight: 500;
+    transition: .5s;
+    text-shadow: 0 0 10px var(--txt-color);
+}
+
+.logo:hover {
+    color: #dcdcdc;
+}
+
+.hamburger {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}

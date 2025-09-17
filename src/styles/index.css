@@ -1,0 +1,119 @@
+:root {
+    --bg-color: #FFFFFF;
+    --txt-color: #222222;
+    --btn-bg-color: #954130;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spectral", serif;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: "Domine", serif;
+}
+
+h1, h2, h3, p {
+    color: var(--txt-color);
+}
+
+a {
+    text-decoration: none;
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+}
+
+/* Layout */
+body {
+    background-color: var(--bg-color);
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Utility */
+/* Font sizes */
+.font-size-14 {
+    font-size: 0.875rem;
+}
+
+.font-size-18 { 
+    font-size: 1.125rem;
+}
+
+.font-size-24 {
+    font-size: 1.5rem;
+}
+
+.font-size-28 {
+    font-size: 1.75rem;
+}
+
+.font-size-32 {
+    font-size: 2rem;
+}
+
+/* Font weights */
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+/* General */
+.max-width-1400 {
+    max-width: 1400px;
+}
+
+.side-margin-auto {
+    margin: 0 auto;
+}
+
+/* Text */
+.txt-center {
+    text-align: center;
+}
+
+.color-light {
+    color: var(--bg-color);
+}
+
+/* Buttons */
+.btn {
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 900;
+    transition: .5s;
+}
+
+.primary-btn {
+    border: 2px solid var(--btn-bg-color);
+    color: var(--btn-bg-color);
+}
+
+.primary-btn:hover {
+    background-color: var(--btn-bg-color);
+    color: var(--bg-color);
+}
+
+.sec-btn {
+    background-color: var(--btn-bg-color);
+    color: var(--bg-color);
+}
+
+.sec-btn:hover {
+    background-color: #743225;
+}
