@@ -1,7 +1,6 @@
 import { Link } from "react-router";
-
 import highlights from "../../../../highlights.js";
-import HighlightsCard from "./HighligtsCard";
+import HighlightsCard from "./HighligtsCard.jsx";
 
 export default function HighlightsSection() {
     const highlightElements = highlights.map(highlight => {
