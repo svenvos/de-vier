@@ -10,7 +10,7 @@ export default function HighlightsSection() {
                 <img src={highlight.imageUrl} alt={highlight.imageAlt} />
                 <div className="txt-container">
                     <p className="font-size-18">{highlight.description}</p>
-                    <Link className="btn primary-btn" to={highlight.linkTo}>{highlight.btnText}</Link>
+                    <Link to={highlight.linkTo} className="btn primary-btn">{highlight.btnText}</Link>
                 </div>
             </HighlightsCard>
         );
