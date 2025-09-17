@@ -1,6 +1,6 @@
 import "../../styles/Navbar.css";
 import { FaBars, FaXmark } from "react-icons/fa6";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import { useEffect, useState } from "react";
 import NavbarMenuItems from "./NavbarMenuItems.jsx";
 import { createContext } from "react";
@@ -9,8 +9,10 @@ export const HeaderContext = createContext();
 
 export default function Navbar() {
     const [ navbarOpen, setNavbarOpen ] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
+        setNavbarOpen(false);
         const header = document.querySelector("header");
 
         function handleScroll() {
@@ -27,7 +29,7 @@ export default function Navbar() {
             window.removeEventListener("scroll", handleScroll);
         }
 
-    }, []);
+    }, [location]);
 
     function toggleNavbar() {
         setNavbarOpen(prevNavbarOpen => !prevNavbarOpen);
