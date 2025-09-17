@@ -79,7 +79,7 @@ nav {
 
 .navbar.open {
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     background-color: var(--bg-color);
     z-index: 99999;
     overflow: hidden;
