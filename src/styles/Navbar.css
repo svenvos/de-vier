@@ -12,9 +12,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-nav  {
     color: var(--bg-color);
 }
 
@@ -29,6 +26,15 @@ nav  {
 
 .logo:hover {
     color: #dcdcdc;
+}
+
+.hamburger-container {
+    padding: 2px;
+    background-color: var(--btn-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
 
 .hamburger {
