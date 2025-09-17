@@ -79,7 +79,7 @@ nav {
 
 .navbar.open {
     width: 100vw;
-    height: 120vh;
+    height: 125vh;
     background-color: var(--bg-color);
     z-index: 99999;
     overflow: hidden;
@@ -112,7 +112,7 @@ nav {
 .navbar.open .menu-items {
     position: absolute;
     left: 50%;
-    top: 55%;
+    top: 40%;
     transform: translate(-50%, -50%);
     max-width: 800px;
     z-index: 2;
