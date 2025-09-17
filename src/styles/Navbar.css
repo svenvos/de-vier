@@ -112,7 +112,7 @@ nav {
 .navbar.open .menu-items {
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 45%;
     transform: translate(-50%, -50%);
     max-width: 800px;
     z-index: 2;
@@ -129,7 +129,6 @@ nav {
 .navbar.open .menu-items li a {
     line-height: 1;
     color: var(--txt-color);
-    /* padding: 0.5rem 0; */
 }
 
 .navbar.open .menu-items li a:hover {
