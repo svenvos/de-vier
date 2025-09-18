@@ -1,5 +1,5 @@
 import seating from "../../assets/seating.jpg";
-import Home, { HomeContext } from "../../pages/Home.jsx";
+import { HomeContext } from "../../pages/Home.jsx";
 import { useContext } from "react";
 
 export default function BookYourTable() {
