@@ -20,7 +20,7 @@ h1, h2, h3, p {
     color: var(--txt-color);
 }
 
-a {
+a, button {
     text-decoration: none;
     font-family: "Manrope", Arial, Helvetica, sans-serif;
 }
