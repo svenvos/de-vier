@@ -1,4 +1,4 @@
-/* Hero section */
+/* Hero Component */
 .hero, .hero .txt-container {
     width: 100%;
     height: 95vh;
@@ -29,8 +29,7 @@
     align-self: flex-start;
 }
 
-/* Main content */
-/* Highlights */
+/* HighlightsSection Component */
 .highlights {
     padding: 0 1rem;
     margin: 1rem auto 4rem;
@@ -60,12 +59,33 @@
     margin-top: auto;
 }
 
-/* About us */
+/* BookYourTable Component */
+.booking-cta-container {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--txt-color);
+}
+
+.booking-cta-container .txt-container {
+    padding: 0 1rem 4rem;
+}
+
+.booking-cta-container .txt-container h2 {
+    margin: 2.5rem 0;
+}
+
+.booking-cta-container .txt-container .desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* AboutUs Component */
 .about-us-container {
     margin-bottom: 4rem;
     padding: 1rem 1rem;
     width: 100%;
-    background-color: var(--txt-color);
 }
 
 .about-us {
@@ -98,6 +118,14 @@
         flex-direction: row;
     }
 
+    .booking-cta-container {
+        flex-direction: row-reverse;
+    }
+
+    .booking-cta-container .txt-container {
+        padding: 4rem 1rem;
+    }
+
     .about-us-container {
         padding: 3rem 3rem;
     }
@@ -106,17 +134,17 @@
         flex-direction: row;
     }
 
-    .about-us img {
+    .about-us img, .booking-cta-container img {
         width: 50%;
     }
 
-    .about-us .txt-container {
+    .txt-container {
         justify-content: center;
         margin: 0 auto;
         max-width: 350px;
     }
 
-    .about-us .txt-container h2 {
+    .txt-container h2 {
         font-size: 1.875rem;
     }
 }
