@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 
 export default function NavbarMenuItems() {
-    const menuItems = ["menu", "calendar", "about", "buffet", "contact"];
+    const menuItems = ["menu", "buffetten", "agenda", "over ons", "contact"];
 
     const menuItemElements = menuItems.map(item => {
         return (
