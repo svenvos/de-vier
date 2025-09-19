@@ -12,7 +12,7 @@ export default [
         imageAlt: "Voorbeeld van een heerlijk uitgebreid ochtendbuffet met verschillende soorten vleeswaren en broodjes.",
         supportingText: "Voorbeeld van een ontbijtbuffet",
         btnTxt: "Bekijk onze buffetten",
-        linkTo: "buffet"
+        linkTo: "buffetten"
     },
     {
         id: nanoid(),
@@ -32,7 +32,7 @@ export default [
     },
     {
         id: nanoid(),
-        imageSrc: "",
+        imageSrc: fishBuffetImg,
         imageAlt: "",
         supportingText: "",
         btnTxt: "",
