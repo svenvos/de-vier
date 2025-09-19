@@ -7,19 +7,19 @@ export default function NavbarMenuItems() {
             linkTo: "menu"
         },
         {
-            text: "buffetten",
+            text: "Buffetten",
             linkTo: "buffet"
         },
         {
-            text: "agenda",
+            text: "Agenda",
             linkTo: "calendar"
         },
         {
-            text: "over ons",
+            text: "Over ons",
             linkTo: "about"
         },
         {
-            text: "contact",
+            text: "Contact",
             linkTo: "contact"
         }
     ];
