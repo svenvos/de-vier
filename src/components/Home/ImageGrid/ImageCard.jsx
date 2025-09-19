@@ -1,5 +1,7 @@
-export default function ImageCard() {
+export default function ImageCard({ children }) {
     return (
-        <h1>Image Card</h1>
+        <div className="image-grid-item">
+            {children}
+        </div>
     );
 }
