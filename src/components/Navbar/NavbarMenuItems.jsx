@@ -1,12 +1,33 @@
 import { NavLink } from "react-router";
 
 export default function NavbarMenuItems() {
-    const menuItems = ["menu", "buffetten", "agenda", "over ons", "contact"];
+    const menuItems = [
+        {
+            text: "Menu",
+            linkTo: "menu"
+        },
+        {
+            text: "buffetten",
+            linkTo: "buffet"
+        },
+        {
+            text: "agenda",
+            linkTo: "calendar"
+        },
+        {
+            text: "over ons",
+            linkTo: "about"
+        },
+        {
+            text: "contact",
+            linkTo: "contact"
+        }
+    ];
 
-    const menuItemElements = menuItems.map(item => {
+    const menuItemElements = menuItems.map(menuItem => {
         return (
             <li>
-                <NavLink to={item} className={({isActive}) => isActive ? "active font-size-32" : "font-size-32"}>{item}</NavLink>
+                <NavLink to={menuItem.linkTo} className={({isActive}) => isActive ? "active font-size-32" : "font-size-32"}>{menuItem.text}</NavLink>
             </li>
         );
     });

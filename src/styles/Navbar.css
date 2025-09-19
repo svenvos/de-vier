@@ -69,10 +69,6 @@ nav {
     list-style: none;
 }
 
-.menu-items li a {
-    text-transform: capitalize;
-}
-
 .active {
     text-decoration: underline;
 }

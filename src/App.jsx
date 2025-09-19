@@ -16,7 +16,7 @@ export default function App() {
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path="menu" element={<Menu />} />
-                <Route path="buffetten" element={<Buffet />} />
+                <Route path="buffet" element={<Buffet />} />
                 <Route path="dinerbon" element={<Dinerbon />} />
                 <Route path="about" element={<AboutUs />} />
                 <Route path="calendar" element={<Calendar />} />

@@ -20,7 +20,7 @@ export default [
         imageAlt: "Foto van buffetschalen vol met eten.",
         description: "Voor groepen en speciale gelegenheden bieden wij uitgebreide buffetten vol smaak en variatie. Van hartige klassiekers tot verrassende specialiteiten: er is voor ieder wat wils.",
         btnText: "Bekijk onze buffetopties",
-        linkTo: "buffetten"
+        linkTo: "buffet"
     },
     {
         id: nanoid(),
