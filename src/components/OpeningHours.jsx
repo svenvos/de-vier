@@ -11,12 +11,12 @@ export default function OpeningHours() {
 
     const openingHourElements = openingHours.map(item => {
         return (
-            <p className="day color-light font-size-20 font-weight-600">{item.day}:
+            <p className="color-light font-size-20 font-weight-600">{item.day}:
                 {
                     item.opening ? (
-                        <span className="hours color-light font-size-16 font-weight-400">{item.opening}-{item.closing}</span>
+                        <span className="color-light font-size-16 font-weight-400">{item.opening}-{item.closing}</span>
                     ) : (
-                        <span className="hours color-light font-size-16 font-weight-400">Gesloten</span>
+                        <span className="color-light font-size-16 font-weight-400">Gesloten</span>
                     )
                 }
             </p>
@@ -24,7 +24,7 @@ export default function OpeningHours() {
     });
 
     return (
-        <div className="opening-hours-container">
+        <div className="container">
             <h2 className="color-light font-size-32">Openingstijden</h2>
             <div className="opening-hours">
                 {openingHourElements}
