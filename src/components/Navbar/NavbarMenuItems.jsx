@@ -12,12 +12,10 @@ export default function NavbarMenuItems() {
     });
 
     return (
-        <>
-            <div className="menu-items">
-                <ul>
-                    {menuItemElements}
-                </ul>
-            </div>
-        </>
+        <div className="menu-items">
+            <ul>
+                {menuItemElements}
+            </ul>
+        </div>
     );
 }
