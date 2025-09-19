@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Layout from "./components/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Menu from "./pages/Menu.jsx";
+import Buffet from "./pages/Buffet.jsx";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path="menu" element={<Menu />} />
+                <Route path="buffet" element={<Buffet />} />
             </Route>
         </Routes>
     </BrowserRouter>
