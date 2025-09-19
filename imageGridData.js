@@ -8,6 +8,14 @@ import wrapsBuffetImg from "./src/assets/imageGridImages/wraps-buffet.jpg";
 export default [
     {
         id: nanoid(),
+        imageSrc: dinerbonImg,
+        imageAlt: "",
+        supportingText: "",
+        btnTxt: "",
+        linkTo: ""
+    },
+    {
+        id: nanoid(),
         imageSrc: morningBuffetImg,
         imageAlt: "Voorbeeld van een heerlijk uitgebreid ochtendbuffet met verschillende soorten vleeswaren en broodjes.",
         supportingText: "Voorbeeld van een ontbijtbuffet",
@@ -21,14 +29,6 @@ export default [
         supportingText: "Onze prachtige bar",
         btnTxt: "Bekijk ons menu",
         linkTo: "menu"
-    },
-    {
-        id: nanoid(),
-        imageSrc: dinerbonImg,
-        imageAlt: "",
-        supportingText: "",
-        btnTxt: "",
-        linkTo: ""
     },
     {
         id: nanoid(),
