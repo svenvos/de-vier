@@ -1,6 +1,7 @@
 import "../styles/Home.css";
 import Hero from "../components/Home/Hero.jsx";
 import HighlightsSection from "../components/Home/HighlightsSection/HighlightsSection.jsx";
+import ImageGrid from "../components/Home/ImageGrid/ImageGrid.jsx";
 import BookYourTable from "../components/Home/BookYourTable.jsx";
 import AboutUs from "../components/Home/AboutUs.jsx";
 import { createContext } from "react";
@@ -17,6 +18,7 @@ export default function Home() {
             <main>
                 <Hero />
                 <HighlightsSection />
+                <ImageGrid />
                 <BookYourTable />
                 <AboutUs />
             </main>
