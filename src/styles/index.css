@@ -16,7 +16,7 @@ h1, h2, h3 {
     font-family: "Domine", serif;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, a {
     color: var(--txt-color);
 }
 
