@@ -7,6 +7,7 @@
 
 .navbar.scrolled {
     background-color: var(--bg-color);
+    box-shadow: 0 0 10px var(--txt-color);
 }
 
 .navbar.scrolled nav .logo, .navbar.open nav .logo {
@@ -69,7 +70,6 @@ nav {
 }
 
 .menu-items li a {
-    color: var(--txt-color);
     text-transform: capitalize;
 }
 
@@ -128,7 +128,6 @@ nav {
 
 .navbar.open .menu-items li a {
     line-height: 1;
-    color: var(--txt-color);
 }
 
 .navbar.open .menu-items li a:hover {
