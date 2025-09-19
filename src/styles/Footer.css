@@ -4,6 +4,7 @@ footer {
     gap: 2rem;
     padding: 2rem;
     background-color: var(--txt-color);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 footer .container {
