@@ -3,14 +3,14 @@ import ImageCard from "./ImageCard.jsx";
 import imageGridData from "../../../../imageGridData.js";
 
 export default function ImageGrid() {
-    const imageGridElements = imageGridData.map(item => {
+    const imageGridElements = imageGridData.map(imageGridItem => {
         return (
-            <ImageCard key={item.id}>
+            <ImageCard key={imageGridItem.id}>
                 <div className="image-wrapper">
-                    <img src={item.imageSrc} alt={item.imageAlt} />
+                    <img src={imageGridItem.imageSrc} alt={imageGridItem.imageAlt} />
                 </div>
-                <p className="font-size-18">{item.supportingText}</p>
-                <Link to={item.linkTo}>{item.btnTxt}</Link>
+                <p className="font-size-18">{imageGridItem.supportingText}</p>
+                <Link to={imageGridItem.linkTo}>{imageGridItem.btnTxt}</Link>
             </ImageCard>
         );
     });
