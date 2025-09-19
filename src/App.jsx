@@ -4,7 +4,7 @@ import Layout from "./components/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Menu from "./pages/Menu.jsx";
 import Buffet from "./pages/Buffet.jsx";
-import Dinerbon from "./pages/DinerBon.jsx";
+import Dinerbon from "./pages/Dinerbon.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 import Calendar from "./pages/Calendar.jsx";
 import Contact from "./pages/Contact.jsx";
