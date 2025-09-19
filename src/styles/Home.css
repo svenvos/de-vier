@@ -59,6 +59,51 @@
     margin-top: auto;
 }
 
+/* ImageGrid Component */
+.image-grid-container {
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.image-grid-container::-webkit-scrollbar {
+    display: none;
+}
+
+.image-grid-item {
+    flex: 0 0 85%;
+    scroll-snap-align: start;
+    display:flex;
+    flex-direction:column;
+}
+
+.image-grid-item .image-wrapper {
+    width: 100%;
+    height: 550px;
+}
+  
+.image-grid-item .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-grid-item p, .image-grid-item a {
+    padding-left: 1rem;
+}
+
+.image-grid-item p {
+    margin: 1rem 0;
+}
+
+.image-grid-item a {
+    text-decoration: underline;
+}
+
 /* BookYourTable Component */
 .booking-cta-container {
     margin-bottom: 4rem;
@@ -108,6 +153,20 @@
 }
 
 /* Media screens */
+@media (min-width: 769px) {
+    .image-grid-item {
+        flex: 0 0 65%;
+    }
+
+    .image-grid-item .image-wrapper {
+        height: 450px;
+    }
+
+    .image-grid-item p, .image-grid-item a {
+        padding-left: 2rem;
+    }
+}
+
 @media (min-width: 1024px) {
     .hero, .hero .txt-container {
         height: 85vh;
