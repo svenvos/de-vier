@@ -4,6 +4,10 @@ import Layout from "./components/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Menu from "./pages/Menu.jsx";
 import Buffet from "./pages/Buffet.jsx";
+import Dinerbon from "./pages/DinerBon.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
+import Calendar from "./pages/Calendar.jsx";
+import Contact from "./pages/Contact.jsx";
 
 export default function App() {
   return (
@@ -13,6 +17,10 @@ export default function App() {
                 <Route index element={<Home />} />
                 <Route path="menu" element={<Menu />} />
                 <Route path="buffetten" element={<Buffet />} />
+                <Route path="dinerbon" element={<Dinerbon />} />
+                <Route path="about" element={<AboutUs />} />
+                <Route path="calendar" element={<Calendar />} />
+                <Route path="contact" element={<Contact />} />
             </Route>
         </Routes>
     </BrowserRouter>
