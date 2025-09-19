@@ -1,0 +1,37 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--txt-color);
+}
+
+.opening-hours-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.opening-hours-container p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .opening-hours-container {
+        align-items: flex-start;
+    }
+    
+    .opening-hours-container p {
+        justify-content: flex-start;
+    }
+}
