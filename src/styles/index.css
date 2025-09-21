@@ -142,3 +142,7 @@ button {
 .sec-btn:hover {
     background-color: #743225;
 }
+
+.active {
+    text-decoration: underline;
+}
