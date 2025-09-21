@@ -16,7 +16,7 @@ export default function Navbar() {
         const header = document.querySelector("header");
 
         function handleScroll() {
-            if (window.scrollY > 0) {
+            if (window.scrollY > 0 || location.pathname !== "/") {
                 header.classList.add("scrolled");
             } else {
                 header.classList.remove("scrolled");
