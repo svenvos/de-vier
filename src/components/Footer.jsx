@@ -7,8 +7,14 @@ export default function Footer() {
     return (
         <footer>
             <OpeningHours />
-            <Address />
-            <ContactDetails />
+            <div className="container">
+                <h2 className="color-light font-size-32">Adres</h2>
+                <Address className="color-light" />
+            </div>
+            <div className="container">
+                <h2 className="color-light font-size-32">Contact</h2>
+                <ContactDetails className="color-light" />
+            </div>
         </footer>
     );
 }

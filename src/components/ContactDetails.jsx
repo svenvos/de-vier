@@ -1,17 +1,14 @@
-export default function ContactDetails() {
+export default function ContactDetails({ className }) {
     return (
-        <div className="container">
-            <h2 className="color-light font-size-32">Contact</h2>
-            <div className="contact-details">
-                <p className="color-light font-size-20 font-weight-600">
-                    Tel: 
-                    <a href="tel:038-33 334 63" className="color-light font-size-16 font-weight-400">038-33 334 63</a>
-                </p>
-                <p className="color-light font-size-20 font-weight-600">
-                    Mail: 
-                    <a href="mailto:info@devier-kampen.nl" className="color-light font-size-16 font-weight-400">info@devier-kampen.nl</a>
-                </p>
-            </div>
+        <div className="contact-details">
+            <p className={`font-size-20 font-weight-600 ${className === "color-light" ? className : ""}`}>
+                Tel: 
+                <a href="tel:038-33 334 63" className={`font-size-16 font-weight-400 ${className === "color-light" ? className : ""}`}>038-33 334 63</a>
+            </p>
+            <p className={`font-size-20 font-weight-600 ${className === "color-light" ? className : ""}`}>
+                Mail: 
+                <a href="mailto:info@devier-kampen.nl" className={`font-size-16 font-weight-400 ${className === "color-light" ? className : ""}`}>info@devier-kampen.nl</a>
+            </p>
         </div>
     );
 }
