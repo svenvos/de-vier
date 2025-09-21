@@ -1,7 +1,7 @@
 import "../../styles/Navbar.css";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { Link, useLocation } from "react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import NavbarMenuItems from "./NavbarMenuItems.jsx";
 import { createContext } from "react";
 
@@ -9,19 +9,17 @@ export const HeaderContext = createContext();
 
 export default function Navbar() {
     const [ navbarOpen, setNavbarOpen ] = useState(false);
+    const [ scrolled, setScrolled ] = useState(false);
     const location = useLocation();
 
     useEffect(() => {
         setNavbarOpen(false);
-        const header = document.querySelector("header");
 
         function handleScroll() {
-            if (window.scrollY > 0 || location.pathname !== "/") {
-                header.classList.add("scrolled");
-            } else {
-                header.classList.remove("scrolled");
-            }
+            setScrolled(window.scrollY > 0 || location.pathname !== "/");
         }
+
+        handleScroll();
 
         window.addEventListener("scroll", handleScroll);
 
@@ -37,7 +35,7 @@ export default function Navbar() {
 
     return (
         <HeaderContext.Provider value={{toggleNavbar}}>
-            <header className={`navbar ${navbarOpen ? "open" : ""}`}>
+            <header className={`navbar ${navbarOpen ? "open" : ""} ${scrolled ? "scrolled" : ""}`}>
                 <nav>
                     <Link to="." className="logo">de vier</Link>
                     {
