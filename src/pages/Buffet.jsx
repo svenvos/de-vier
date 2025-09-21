@@ -5,7 +5,7 @@ import "../styles/Buffet.css";
 export default function Buffet() {
     return (
         <main>
-            <div className="buffet-container">
+            <div className="container">
                 <h1>Buffet</h1>
                 <p>Mocht u één of meerdere buffetten willen reserveren, gelieve contact met ons opnemen via telefoon of email.</p>
                 <ContactDetails />
