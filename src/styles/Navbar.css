@@ -69,10 +69,6 @@ nav {
     list-style: none;
 }
 
-.active {
-    text-decoration: underline;
-}
-
 .navbar.open {
     width: 100vw;
     height: 100vh;
