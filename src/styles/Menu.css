@@ -1,0 +1,8 @@
+.menu-nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu-nav a:hover {
+    text-decoration: underline;
+}
