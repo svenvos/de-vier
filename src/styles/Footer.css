@@ -26,6 +26,11 @@ footer .container {
     align-items: center;
 }
 
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
 @media (min-width: 768px) {
     footer {
         flex-direction: row;
