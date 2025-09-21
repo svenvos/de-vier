@@ -17,7 +17,7 @@ export default function Footer() {
                 <ContactDetails className="color-light" />
             </div>
             <div className="container">
-                <h2 className="color-light">Socials</h2>
+                <h2 className="color-light font-size-32">Socials</h2>
                 <div className="icons">
                     <a href="https://www.instagram.com/de_vierkampen/" target="_blank" className="color-light">
                         <FaInstagram className="font-size-24" />
