@@ -18,6 +18,7 @@ export default function Buffet() {
                     </p>
                 </div>
                 <BuffetMenu />
+                <p className="footnote">* Klik op de foto's om door alle buffetten te scrollen.</p>
             </div>
         </main>
     );
