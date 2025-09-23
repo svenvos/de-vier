@@ -7,26 +7,34 @@ import "../styles/Footer.css";
 export default function Footer() {
     return (
         <footer>
-            <OpeningHours />
-            <div className="container">
-                <h2 className="color-light font-size-32">Adres</h2>
-                <Address className="color-light" />
-            </div>
-            <div className="container">
-                <h2 className="color-light font-size-32">Contact</h2>
-                <ContactDetails className="color-light" />
-            </div>
-            <div className="container">
-                <h2 className="color-light font-size-32">Socials</h2>
-                <div className="icons">
-                    <a href="https://www.instagram.com/de_vierkampen/" target="_blank" className="color-light">
-                        <FaInstagram className="font-size-24" />
-                    </a>
-                    <a href="https://www.facebook.com/devierkampen" target="_blank" className="color-light">
-                        <FaFacebookF className="font-size-24" />
-                    </a>
+            <div className="footer-container">
+                <div className="container">
+                    <h2 className="color-light font-size-32">Openingstijden</h2>
+                    <OpeningHours className="color-light" />
+                </div>
+                <div className="container">
+                    <h2 className="color-light font-size-32">Adres</h2>
+                    <Address className="color-light" />
+                </div>
+                <div className="container">
+                    <h2 className="color-light font-size-32">Contact</h2>
+                    <ContactDetails className="color-light" />
+                </div>
+                <div className="container">
+                    <h2 className="color-light font-size-32">Socials</h2>
+                    <div className="icons">
+                        <a href="https://www.instagram.com/de_vierkampen/" target="_blank" className="color-light">
+                            <FaInstagram className="font-size-24" />
+                        </a>
+                        <a href="https://www.facebook.com/devierkampen" target="_blank" className="color-light">
+                            <FaFacebookF className="font-size-24" />
+                        </a>
+                    </div>
                 </div>
             </div>
+            <p className="color-light footnote">
+                Gemaakt door: <a href="https://www.linkedin.com/in/sven-vos-b9491a211/" target="_blank">Sven Vos</a>
+            </p>
         </footer>
     );
 }

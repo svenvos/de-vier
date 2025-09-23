@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 
-export default function OpeningHours() {
+export default function OpeningHours({ className }) {
     const openingHours = [
         {
             id: nanoid(),
@@ -46,12 +46,12 @@ export default function OpeningHours() {
 
     const openingHourElements = openingHours.map(item => {
         return (
-            <p className="color-light font-size-20 font-weight-600" key={item.id}>{item.day}:
+            <p className={`font-size-20 font-weight-600 ${className ? className : ""}`} key={item.id}>{item.day}:
                 {
                     item.opening ? (
-                        <span className="color-light font-size-16 font-weight-400">{item.opening}-{item.closing}</span>
+                        <span className={`font-size-16 font-weight-400 ${className ? className : ""}`}>{item.opening}-{item.closing}</span>
                     ) : (
-                        <span className="color-light font-size-16 font-weight-400">Gesloten</span>
+                        <span className={`font-size-16 font-weight-400 ${className ? className : ""}`}>Gesloten</span>
                     )
                 }
             </p>
@@ -59,11 +59,8 @@ export default function OpeningHours() {
     });
 
     return (
-        <div className="container">
-            <h2 className="color-light font-size-32">Openingstijden</h2>
             <div className="opening-hours">
                 {openingHourElements}
             </div>
-        </div>
     );
 }

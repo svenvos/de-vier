@@ -42,7 +42,7 @@ button {
     transition: .5s;
 }
 
-.contact-details p a:hover, .icons a:hover {
+.contact-details p a:hover, .icons a:hover, .footnote a:hover {
     color: #7a7a7a;
 }
 
