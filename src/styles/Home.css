@@ -197,7 +197,7 @@
         width: 50%;
     }
 
-    .txt-container:not(.hero .txt-container) {
+    .txt-container:not(.hero .txt-container):not(.highlight .txt-container) {
         justify-content: center;
         margin: 0 auto;
         max-width: 350px;

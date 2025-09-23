@@ -1,5 +1,7 @@
 export default function DessertsMenu() {
     return (
-        <h1>Desserts</h1>
+        <div className="menu">
+            <h1>Desserts</h1>
+        </div>
     );
 }
