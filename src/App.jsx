@@ -12,6 +12,7 @@ import MenuLayout from "./components/MenuLayout.jsx";
 import DinnerMenu from "./components/Menu/DinnerMenu.jsx";
 import LunchMenu from "./components/Menu/LunchMenu.jsx";
 import DessertsMenu from "./components/Menu/DessertsMenu.jsx";
+import ChristmasMenu from "./components/Menu/ChristmasMenu.jsx";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
                     <Route index element={<DinnerMenu />} />
                     <Route path="lunch" element={<LunchMenu />} />
                     <Route path="desserts" element={<DessertsMenu />} />
+                    <Route path="christmas" element={<ChristmasMenu />} />
                 </Route>
                 <Route path="buffet" element={<Buffet />} />
                 <Route path="dinerbon" element={<Dinerbon />} />
