@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import highlights from "../../../../highlights.js";
+import highlights from "../../../utils/highlights.js";
 import HighlightsCard from "./HighligtsCard.jsx";
 
 export default function HighlightsSection() {

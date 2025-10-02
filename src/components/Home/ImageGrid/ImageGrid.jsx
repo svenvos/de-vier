@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import ImageCard from "./ImageCard.jsx";
-import imageGridData from "../../../../imageGridData.js";
+import imageGridData from "../../../utils/imageGridData.js";
 
 export default function ImageGrid() {
     const imageGridElements = imageGridData.map(imageGridItem => {

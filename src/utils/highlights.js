@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
-import menuImg from "./src/assets/highlightImages/menu.jpg";
-import buffetImg from "./src/assets/highlightImages/buffet.jpg";
-import eventImg from "./src/assets/highlightImages/event.jpg";
+import menuImg from "../assets/highlightImages/menu.jpg";
+import buffetImg from "../assets/highlightImages/buffet.jpg";
+import eventImg from "../assets/highlightImages/event.jpg";
 
 export default [
     {

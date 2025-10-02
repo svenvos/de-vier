@@ -1,10 +1,10 @@
 import { nanoid } from "nanoid";
-import isSeasonalPeriod from "./src/utils/dateUtils.js";
-import morningBuffetImg from "./src/assets/imageGridImages/morning-buffet.jpg";
-import barImg from "./src/assets/imageGridImages/bar.jpg";
-import dinerbonImg from "./src/assets/imageGridImages/dinerbon.jpg";
-import fishBuffetImg from "./src/assets/imageGridImages/fish-buffet.jpg";
-import christmasImg from "./src/assets/imageGridImages/christmas.jpg";
+import isSeasonalPeriod from "./dateUtils.js";
+import morningBuffetImg from "../assets/imageGridImages/morning-buffet.jpg";
+import barImg from "../assets/imageGridImages/bar.jpg";
+import dinerbonImg from "../assets/imageGridImages/dinerbon.jpg";
+import fishBuffetImg from "../assets/imageGridImages/fish-buffet.jpg";
+import christmasImg from "../assets/imageGridImages/christmas.jpg";
 
 let imageGridData = [
     {
