@@ -1,10 +1,12 @@
 import { nanoid } from "nanoid";
+import isSeasonalPeriod from "./src/utils/dateUtils.js";
 import morningBuffetImg from "./src/assets/imageGridImages/morning-buffet.jpg";
 import barImg from "./src/assets/imageGridImages/bar.jpg";
 import dinerbonImg from "./src/assets/imageGridImages/dinerbon.jpg";
 import fishBuffetImg from "./src/assets/imageGridImages/fish-buffet.jpg";
+import christmasImg from "./src/assets/imageGridImages/christmas.jpg";
 
-export default [
+let imageGridData = [
     {
         id: nanoid(),
         imageSrc: dinerbonImg,
@@ -23,18 +25,31 @@ export default [
     },
     {
         id: nanoid(),
-        imageSrc: barImg,
-        imageAlt: "Sfeervolle foto van de bar. Verschillende taps voor bieren te zien, met leuke barkrukken aan de bar.",
-        supportingText: "Onze prachtige bar",
-        btnTxt: "Bekijk ons menu",
-        linkTo: "menu"
-    },
-    {
-        id: nanoid(),
         imageSrc: fishBuffetImg,
         imageAlt: "Ons heerlijke visbuffet speciaal op maat gemaakt. Tentoongesteld in ons restaurant.",
         supportingText: "Voorbeeld van een visbuffet",
         btnTxt: "Bekijk onze bufetten",
         linkTo: "buffet"
+    },
+    {
+        id: nanoid(),
+        imageSrc: barImg,
+        imageAlt: "Sfeervolle foto van de bar. Verschillende taps voor bieren te zien, met leuke barkrukken aan de bar.",
+        supportingText: "Onze prachtige bar",
+        btnTxt: "Bekijk ons menu",
+        linkTo: "menu"
     }
 ];
+
+if (isSeasonalPeriod()) {
+    imageGridData.unshift({
+        id: nanoid(),
+        imageSrc: christmasImg,
+        imageAlt: "Nette, gedekte tafel in kerstsferen. Met kerstverlichting aan de wand en een cadeau op tafel.",
+        supportingText: "Kom gezellig dineren tijdens de kerstperiode",
+        btnTxt: "Bekijk ons kerstmenu",
+        linkTo: "menu/christmas"
+    });
+}
+
+export default imageGridData;
