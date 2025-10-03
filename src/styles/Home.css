@@ -6,27 +6,29 @@
 
 .hero {
     margin-top: -6rem;
-    background-image: url("../assets/restaurant-front.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .hero .txt-container {
-    padding: 0 1rem 3rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
 }
 
 .hero .txt-container h1 {
+    text-align: center;
     text-shadow: 0 0 10px var(--txt-color);
+    font-family: "Spectral", serif;
 }
 
 .hero .txt-container button {
     font-family: "Spectral", serif;
     padding: 1rem 3rem;
-    align-self: flex-start;
 }
 
 /* HighlightsSection Component */
@@ -164,6 +166,13 @@
 
     .image-grid-item p, .image-grid-item a {
         padding-left: 2rem;
+    }
+    
+    .hero .txt-container {
+        padding: 0 1rem 3rem;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 2rem;
     }
 }
 
