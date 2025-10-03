@@ -10,7 +10,7 @@ export default function NavbarMenuItems() {
         },
         {
             id: nanoid(),
-            text: "Buffetten",
+            text: "Arrangementen",
             linkTo: "buffet"
         },
         {

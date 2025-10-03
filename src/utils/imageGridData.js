@@ -19,8 +19,8 @@ let imageGridData = [
         id: nanoid(),
         imageSrc: morningBuffetImg,
         imageAlt: "Voorbeeld van een heerlijk uitgebreid ochtendbuffet met verschillende soorten vleeswaren en broodjes.",
-        supportingText: "Voorbeeld van een ontbijtbuffet",
-        btnTxt: "Bekijk onze buffetten",
+        supportingText: "Voorbeeld van een koffietafel",
+        btnTxt: "Bekijk onze arrangementen",
         linkTo: "buffet"
     },
     {
@@ -28,14 +28,14 @@ let imageGridData = [
         imageSrc: fishBuffetImg,
         imageAlt: "Ons heerlijke visbuffet speciaal op maat gemaakt. Tentoongesteld in ons restaurant.",
         supportingText: "Voorbeeld van een visbuffet",
-        btnTxt: "Bekijk onze bufetten",
+        btnTxt: "Bekijk onze arrangementen",
         linkTo: "buffet"
     },
     {
         id: nanoid(),
         imageSrc: barImg,
         imageAlt: "Sfeervolle foto van de bar. Verschillende taps voor bieren te zien, met leuke barkrukken aan de bar.",
-        supportingText: "Onze prachtige bar",
+        supportingText: "Een kijkje in ons restaurant",
         btnTxt: "Bekijk ons menu",
         linkTo: "menu"
     }

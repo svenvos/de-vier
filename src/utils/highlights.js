@@ -18,8 +18,8 @@ export default [
         title: "Voor uw mooiste momenten",
         imageUrl: buffetImg,
         imageAlt: "Foto van buffetschalen vol met eten.",
-        description: "Voor groepen en speciale gelegenheden bieden wij uitgebreide buffetten vol smaak en variatie. Van hartige klassiekers tot verrassende specialiteiten: er is voor ieder wat wils.",
-        btnText: "Bekijk onze buffetopties",
+        description: "Voor groepen en speciale gelegenheden bieden wij uitgebreide arrangementen vol smaak en variatie. Van hartige klassiekers tot verrassende specialiteiten: er is voor ieder wat wils.",
+        btnText: "Bekijk onze arrangementen",
         linkTo: "buffet"
     },
     {
