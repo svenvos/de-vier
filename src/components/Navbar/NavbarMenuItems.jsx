@@ -25,6 +25,11 @@ export default function NavbarMenuItems() {
         },
         {
             id: nanoid(),
+            text: "Vacatures",
+            linkTo: "jobs"
+        },
+        {
+            id: nanoid(),
             text: "Contact",
             linkTo: "contact"
         }

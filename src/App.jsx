@@ -13,6 +13,7 @@ import DinnerMenu from "./components/Menu/DinnerMenu.jsx";
 import LunchMenu from "./components/Menu/LunchMenu.jsx";
 import DessertsMenu from "./components/Menu/DessertsMenu.jsx";
 import ChristmasMenu from "./components/Menu/ChristmasMenu.jsx";
+import Jobs from "./pages/Jobs.jsx";
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
                 <Route path="about" element={<AboutUs />} />
                 <Route path="calendar" element={<Calendar />} />
                 <Route path="contact" element={<Contact />} />
+                <Route path="jobs" element={<Jobs />} />
             </Route>
         </Routes>
     </BrowserRouter>
