@@ -1,3 +1,5 @@
+import ContactDetails from "../components/ContactDetails.jsx";
+
 export default function Jobs() {
     return (
         <main>
