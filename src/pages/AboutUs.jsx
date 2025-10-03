@@ -1,5 +1,3 @@
-import "../styles/AboutUs.css";
-
 export default function() {
     return (
         <main>
