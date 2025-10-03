@@ -37,7 +37,7 @@ export default function Navbar() {
         <HeaderContext.Provider value={{toggleNavbar}}>
             <header className={`navbar ${navbarOpen ? "open" : ""} ${scrolled ? "scrolled" : ""}`}>
                 <nav>
-                    <Link to="." className="logo">de vier</Link>
+                    <Link to="." className="logo">De Vier Jaargetijden</Link>
                     {
                         navbarOpen ? (
                             <>

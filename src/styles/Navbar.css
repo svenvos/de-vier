@@ -34,9 +34,9 @@ nav {
 }
 
 .logo {
-    font-family: "Poppins", serif;
+    font-family: "Spectral", serif;
     color: var(--bg-color);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     transition: .5s;
     text-shadow: 0 0 10px var(--txt-color);
@@ -124,4 +124,10 @@ nav {
 
 .navbar.open .menu-items li a:hover {
     text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        font-size: 2rem;
+    }
 }
