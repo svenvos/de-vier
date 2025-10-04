@@ -1,0 +1,45 @@
+.christmas-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 400px;
+    z-index: 99999;
+    background: url("../assets/snowflake.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.christmas-modal-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.christmas-modal-header svg {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.christmas-modal-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    text-shadow: 0 0 10px var(--txt-color);
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons .btn {
+    font-size: 0.75rem;
+}

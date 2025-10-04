@@ -4,7 +4,9 @@ import HighlightsSection from "../components/Home/HighlightsSection/HighlightsSe
 import ImageGrid from "../components/Home/ImageGrid/ImageGrid.jsx";
 import BookYourTable from "../components/Home/BookYourTable.jsx";
 import AboutUs from "../components/Home/AboutUs.jsx";
+import ChristmasModal from "../components/ChristmasModal.jsx";
 import { createContext } from "react";
+import isSeasonalPeriod from "../utils/dateUtils.js";
 
 export const HomeContext = createContext();
 
@@ -16,6 +18,7 @@ export default function Home() {
     return (
         <HomeContext.Provider value={{openWidget}}>
             <main>
+                {isSeasonalPeriod() && <ChristmasModal />}
                 <Hero />
                 <HighlightsSection />
                 <ImageGrid />
