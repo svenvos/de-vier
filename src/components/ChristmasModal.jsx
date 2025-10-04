@@ -17,8 +17,8 @@ export default function ChristmasModal() {
                 <FaXmark onClick={closeModal} className="color-light" />
             </div>
             <div className="christmas-modal-content">
-                <h2 className="font-size-32 font-weight-600 txt-center color-light">Kerst bij de Vier Jaargetijden</h2>
-                <p className="font-size-18 txt-center color-light">Kom gezellig dineren bij de Vier Jaargetijden tijdens de kerstperiode.</p>
+                <h2 className="font-size-32 font-weight-600 txt-center color-light">Kerst bij De Vier Jaargetijden</h2>
+                <p className="font-size-18 txt-center color-light">Kom gezellig dineren bij De Vier Jaargetijden tijdens de kerstperiode.</p>
                 <Link to="menu/christmas" className="btn sec-btn">Bekijk het kerstmenu</Link>
                 <p className="footnote color-light">*Reserveren alleen via telefoon of email.</p>
                 <ContactDetails className="color-light" />
