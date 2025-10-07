@@ -1,11 +1,21 @@
 import "../styles/ChristmasModal.css";
 import { FaXmark } from "react-icons/fa6";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import ContactDetails from "./ContactDetails.jsx";
 
 export default function ChristmasModal() {
-    const [ isModalOpen, setIsModalOpen ] = useState(true);
+    const [ isModalOpen, setIsModalOpen ] = useState(false);
+
+    useEffect(() => {
+        const christmasModalLatency = setTimeout(() => {
+            setIsModalOpen(true);
+        }, 1000);
+
+        return () => {
+            clearTimeout(christmasModalLatency);
+        }
+    }, []);
 
     function closeModal() {
         setIsModalOpen(false);
