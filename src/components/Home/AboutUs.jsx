@@ -9,8 +9,8 @@ export default function AboutUs() {
                 <div className="txt-container">
                     <h2 className="font-size-24 font-weight-400">Over ons</h2>
                     <div className="desc">
-                        <p>Ons restaurant bestaat al meer dan _aantal_ jaar en is een vaste waarde in de stad. In _jaar_ werd het overgenomen door onze huidige eigenaar en chef, die met passie en vernieuwende ideeën de traditie voortzet. Hier komen gastvrijheid, smaak en beleving samen.</p>
-                        <p>Ons restaurant bestaat al meer dan _aantal_ jaar en is een vaste waarde in de stad. In _jaar_ werd het overgenomen door onze huidige eigenaar en chef, die met passie en vernieuwende ideeën de traditie voortzet. Hier komen gastvrijheid, smaak en beleving samen.</p>
+                        <p>Restaurant De Vierjaargetijden is gevestigd in een prachtig historisch pand aan de IJssel en al jarenlang een vaste waarde in Kampen. In dit voormalige bankgebouw komen historie en gastvrijheid samen, met een warme sfeer die uitnodigt om samen te genieten.</p>
+                        <p>Onze chef werkt met verse, seizoensgebonden ingrediënten en combineert klassieke gerechten met moderne smaken. Of u nu aanschuift voor een intiem diner, een borrel met vrienden of een feestelijke gelegenheid, bij ons proeft u de smaak van genieten.</p>
                     </div>
                     <Link to="about" className="btn primary-btn">Lees meer over ons</Link>
                 </div>
