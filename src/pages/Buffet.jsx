@@ -7,7 +7,11 @@ export default function Buffet() {
         <main>
             <div className="container">
                 <h1>Arrangementen</h1>
-                <p>Mocht u één of meerdere arrangementen willen reserveren, gelieve contact met ons opnemen via telefoon of email.</p>
+                <p>
+                    Of het nu gaat om een familiefeest, bedrijfsuitje of jubileum — wij bieden speciaal samengestelde arrangementen voor grote groepen.
+                    Geniet van heerlijke gerechten, gastvrije service en een sfeervolle setting die past bij elke gelegenheid.
+                    Neem contact met ons op voor meer informatie.
+                </p>
                 <ContactDetails />
                 <BuffetMenu />
                 <p className="footnote">* Klik op de foto's om door alle arrangementen te scrollen.</p>
