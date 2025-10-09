@@ -1,0 +1,38 @@
+.events-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid var(--btn-bg-color);
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+}
+
+.event h2 {
+    margin-bottom: 0.5rem;
+}
+
+.event-description {
+    margin-bottom: 1rem;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+@media (min-width: 768px) {
+    .events-container {
+        flex-direction: row;
+    }
+}
