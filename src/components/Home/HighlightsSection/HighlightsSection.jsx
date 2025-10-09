@@ -6,7 +6,12 @@ export default function HighlightsSection() {
     const highlightElements = highlights.map(highlight => {
         return (
             <HighlightsCard className="highlight" key={highlight.id}>
-                <img src={highlight.imageUrl} alt={highlight.imageAlt} />
+                <img 
+                    src={highlight.imageUrl} 
+                    alt={highlight.imageAlt}
+                    loading="lazy"
+                    decoding="async"
+                />
                 <div className="txt-container">
                     <p className="font-size-18">{highlight.description}</p>
                     <Link to={highlight.linkTo} className="btn primary-btn">{highlight.btnText}</Link>

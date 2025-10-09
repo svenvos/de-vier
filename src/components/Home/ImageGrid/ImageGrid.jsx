@@ -7,7 +7,12 @@ export default function ImageGrid() {
         return (
             <ImageCard key={imageGridItem.id}>
                 <div className="image-wrapper">
-                    <img src={imageGridItem.imageSrc} alt={imageGridItem.imageAlt} />
+                    <img 
+                        src={imageGridItem.imageSrc} 
+                        alt={imageGridItem.imageAlt}
+                        loading="lazy"
+                        decoding="async"
+                    />
                 </div>
                 <p className="font-size-18">{imageGridItem.supportingText}</p>
                 <Link to={imageGridItem.linkTo}>{imageGridItem.btnTxt}</Link>

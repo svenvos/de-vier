@@ -14,16 +14,16 @@ export default function BuffetMenu() {
     return (
         <div className="buffet-menu-container">
             <HTMLFlipBook width={350} height={500}>
-                <img src={buffet} alt="De kaart van het Vier Jaargetijden buffet." />
-                <img src={buffetDeluxe} alt="De kaart van het Vier Jaargetijden deluxe buffet." />
-                <img src={boozes} alt="De kaart van het drankenarrangement" />
-                <img src={party} alt="De kaart van het feestarrangement." />
-                <img src={smallBites} alt="De kaart van het hapjesarrangement." />
-                <img src={choice29} alt="De kaart van het keuzemenu De Vier, voor €29,50." />
-                <img src={choice32} alt="De kaart van het keuzemenu De Vier, voor €32,50." />
-                <img src={coffeeTable} alt="De kaart van de koffietafel." />
-                <img src={coffeeTableDeluxe} alt="De kaart van de koffietafel deluxe." />
-                <img src={pasta} alt="De kaart van het pasta-arrangement." />
+                <img src={buffet} alt="De kaart van het Vier Jaargetijden buffet." loading="lazy" decoding="async" />
+                <img src={buffetDeluxe} alt="De kaart van het Vier Jaargetijden deluxe buffet." loading="lazy" decoding="async" />
+                <img src={boozes} alt="De kaart van het drankenarrangement" loading="lazy" decoding="async" />
+                <img src={party} alt="De kaart van het feestarrangement." loading="lazy" decoding="async" />
+                <img src={smallBites} alt="De kaart van het hapjesarrangement." loading="lazy" decoding="async" />
+                <img src={choice29} alt="De kaart van het keuzemenu De Vier, voor €29,50." loading="lazy" decoding="async" />
+                <img src={choice32} alt="De kaart van het keuzemenu De Vier, voor €32,50." loading="lazy" decoding="async" />
+                <img src={coffeeTable} alt="De kaart van de koffietafel." loading="lazy" decoding="async" />
+                <img src={coffeeTableDeluxe} alt="De kaart van de koffietafel deluxe." loading="lazy" decoding="async" />
+                <img src={pasta} alt="De kaart van het pasta-arrangement." loading="lazy" decoding="async" />
             </HTMLFlipBook>
         </div>
     );

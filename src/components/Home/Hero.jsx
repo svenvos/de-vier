@@ -1,8 +1,22 @@
 import { HomeContext } from "../../pages/Home.jsx";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
+import heroImage from "../../assets/hero.jpg";
 
 export default function Hero() {
     const { openWidget } = useContext(HomeContext);
+
+    // Preload critical images
+    useEffect(() => {
+        const preloadImages = [
+            heroImage,
+            // Add other critical images here
+        ];
+
+        preloadImages.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+    }, []);
 
     return (
         <section className="hero">

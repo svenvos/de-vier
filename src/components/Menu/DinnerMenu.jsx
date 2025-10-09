@@ -9,10 +9,10 @@ export default function DinnerMenu() {
         <div className="menu">
             <h1 className="font-size-32">Diner</h1>
             <HTMLFlipBook width={350} height={500}>
-                <img src={starters} alt="Onze voorgerechten." />
-                <img src={main1} alt="Onze eerste kaart met hoofdgerechten." />
-                <img src={main2} alt="Onze tweede kaart met hoofdgerechten." />
-                <img src={threeCourseFish} alt="Ons drie gangen vismenu." />
+                <img src={starters} alt="Onze voorgerechten." loading="lazy" decoding="async" />
+                <img src={main1} alt="Onze eerste kaart met hoofdgerechten." loading="lazy" decoding="async" />
+                <img src={main2} alt="Onze tweede kaart met hoofdgerechten." loading="lazy" decoding="async" />
+                <img src={threeCourseFish} alt="Ons drie gangen vismenu." loading="lazy" decoding="async" />
             </HTMLFlipBook>
             <p className="footnote">* Klik op de foto's om door het volledige menu te scrollen.</p>
         </div>

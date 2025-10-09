@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import PerformanceMonitor from "./components/PerformanceMonitor.jsx";
 import Layout from "./components/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Buffet from "./pages/Buffet.jsx";
@@ -19,6 +20,7 @@ export default function App() {
   return (
     <BrowserRouter>
         <ScrollToTop />
+        <PerformanceMonitor />
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />

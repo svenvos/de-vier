@@ -7,8 +7,8 @@ export default function DessertsMenu() {
         <div className="menu">
             <h1 className="font-size-32">Desserts</h1>
             <HTMLFlipBook width={350} height={500}>
-                <img src={dessert1} alt="Onze eerste dessertkaart." />
-                <img src={dessert2} alt="Onze tweede dessertkaart." />
+                <img src={dessert1} alt="Onze eerste dessertkaart." loading="lazy" decoding="async" />
+                <img src={dessert2} alt="Onze tweede dessertkaart." loading="lazy" decoding="async" />
             </HTMLFlipBook>
             <p className="footnote">* Klik op de foto's om door het volledige menu te scrollen.</p>
         </div>

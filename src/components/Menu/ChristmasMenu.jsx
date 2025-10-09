@@ -6,7 +6,7 @@ export default function ChristmasMenu() {
         <div className="menu">
             <h1>Kerstmenu</h1>
             <HTMLFlipBook width={350} height={500}>
-                <img src={christmasMenu} alt="Ons kerstmenu, vol met heerlijke kerstgerechten." />
+                <img src={christmasMenu} alt="Ons kerstmenu, vol met heerlijke kerstgerechten." loading="lazy" decoding="async" />
             </HTMLFlipBook>
         </div>
     );
