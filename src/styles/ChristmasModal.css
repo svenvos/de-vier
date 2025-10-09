@@ -4,9 +4,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 350px;
-    max-height: 450px;
+    max-height: 550px;
     z-index: 99999;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../assets/snowflake.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/snowflake.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
