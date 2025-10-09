@@ -8,8 +8,8 @@ export default [
         id: nanoid(),
         title: "Proef het verschil",
         imageUrl: menuImg,
-        imageAlt: "Foto van een heerlijke biefstuk, geserveerd op een bord met patat.",
-        description: "Ontdek onze zorgvuldig samengestelde menukaart, waarin klassieke gerechten een moderne twist krijgen. Elke creatie wordt bereid met seizoensgebonden ingrediënten en een passie voor verfijnde smaak.",
+        imageAlt: "Een heerlijke schaal met nachos.",
+        description: "Geniet bij De Vier van heerlijke en seizoensgebonden gerechten. Wij beschikken over een uitgebreide kaart met diverse vlees, vis & vegetarische gerechten.",
         btnText: "Bekijk ons menu",
         linkTo: "menu"
     },
@@ -18,7 +18,7 @@ export default [
         title: "Voor uw mooiste momenten",
         imageUrl: buffetImg,
         imageAlt: "Foto van buffetschalen vol met eten.",
-        description: "Voor groepen en speciale gelegenheden bieden wij uitgebreide arrangementen vol smaak en variatie. Van hartige klassiekers tot verrassende specialiteiten: er is voor ieder wat wils.",
+        description: "Op zoek naar een locatie voor grote gezelschappen? Bij De Vier kunt u terecht voor een gezellige lunch, borrel of diner. Daarnaast beschikken wij over een aparte zaal die ideaal is voor vergaderingen, diners of feesten.",
         btnText: "Bekijk onze arrangementen",
         linkTo: "buffet"
     },
@@ -27,7 +27,7 @@ export default [
         title: "Geniet. Proost. Beleef.",
         imageUrl: eventImg,
         imageAlt: "Foto van live muziek met dansende mensen in de Vier Jaargetijden.",
-        description: "Op geselecteerde vrijdag- en zaterdagavonden verandert ons restaurant in een bruisende bar met live muziek. Geniet van een drankje, goede sfeer en muzikale optredens in een intieme setting.",
+        description: "Livemuziek bij De Vier! Zin een avondje gezelligheid & dansen? Bekijk onze evenementenagenda met alle data voor de livemuziekavonden.",
         btnText: "Bekijk onze evenementenagenda",
         linkTo: "calendar"
     }
