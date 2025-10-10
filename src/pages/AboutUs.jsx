@@ -23,8 +23,8 @@ export default function() {
                     Wij heten je van harte welkom voor een smakelijke en sfeervolle ervaring aan de IJssel bij Restaurant De Vierjaargetijden.
                 </p>
                 <div className="btns">
-                    <Link to="menu" className="btn primary-btn">Bekijk ons menu</Link>
-                    <Link to="buffet" className="btn sec-btn">Bekijk onze arrangementen</Link>
+                    <Link to="/menu" className="btn primary-btn">Bekijk ons menu</Link>
+                    <Link to="/buffet" className="btn sec-btn">Bekijk onze arrangementen</Link>
                 </div>
             </div>
         </main>
