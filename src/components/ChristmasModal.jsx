@@ -8,7 +8,7 @@ export default function ChristmasModal() {
     const [ isModalOpen, setIsModalOpen ] = useState(false);
 
     useEffect(() => {
-        const hasUserClosedModal = localStorage.getItem("christmasModalClosed");
+        const hasUserClosedModal = sessionStorage.getItem("christmasModalClosed");
         
         if (!hasUserClosedModal) {
             const christmasModalLatency = setTimeout(() => {
@@ -23,7 +23,7 @@ export default function ChristmasModal() {
 
     function closeModal() {
         setIsModalOpen(false);
-        localStorage.setItem("christmasModalClosed", "true");
+        sessionStorage.setItem("christmasModalClosed", "true");
     }
 
     return isModalOpen && (
