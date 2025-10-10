@@ -1,12 +1,9 @@
 import { Outlet } from "react-router";
 import MenuNavbar from "./Menu/MenuNavbar.jsx";
 import "../styles/Menu.css";
+import { openWidget } from "../utils/widgetUtils.js";
 
 export default function MenuLayout() {
-    function openWidget() {
-        _gstpln.openWidget()
-    }
-
     return (
         <main>
             <div className="container">

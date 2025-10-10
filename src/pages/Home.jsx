@@ -7,14 +7,11 @@ import AboutUs from "../components/Home/AboutUs.jsx";
 import ChristmasModal from "../components/ChristmasModal.jsx";
 import { createContext } from "react";
 import isSeasonalPeriod from "../utils/dateUtils.js";
+import { openWidget } from "../utils/widgetUtils.js";
 
 export const HomeContext = createContext();
 
 export default function Home() {
-    function openWidget() {
-        _gstpln.openWidget()
-    }
-
     return (
         <HomeContext.Provider value={{openWidget}}>
             <main>
