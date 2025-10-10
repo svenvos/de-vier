@@ -5,11 +5,9 @@ import heroImage from "../../assets/hero.jpg";
 export default function Hero() {
     const { openWidget } = useContext(HomeContext);
 
-    // Preload critical images
     useEffect(() => {
         const preloadImages = [
             heroImage,
-            // Add other critical images here
         ];
 
         preloadImages.forEach(src => {
