@@ -10,9 +10,14 @@ export default function Calendar() {
                 <div className="event-details"> 
                     <h3>Datum</h3>
                     <p>{event.date}</p>
-                    <h3>Tijd</h3>
-                    <p>{event.time}</p>
+                    <h3>Aanvang</h3>
+                    <p>{event.startingTime}</p>
                 </div>
+                {
+                    event.poster ?
+                    <img src={event.poster} alt={`Poster van ${event.title}`} /> :
+                    null
+                }
             </div>
         );
     });
