@@ -1,18 +1,20 @@
+.event-header {
+    text-align: center;
+}
+
 .events-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: stretch;
-    gap: 1rem;
+    align-items: center;
+    gap: 2rem;
 }
 
 .event {
     max-width: 350px;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     width: 100%;
-    height: fit-content;
 }
 
 .event h2 {
@@ -42,7 +44,6 @@
     flex-shrink: 0;
 }
 
-/* Placeholder for events without posters */
 .event:not(:has(img))::after {
     content: '';
     height: 450px;
@@ -56,7 +57,14 @@
 }
 
 @media (min-width: 768px) {
+    .event-header {
+        text-align: left;
+    }
+
     .events-container {
+        margin-top: 1rem;
         flex-direction: row;
+        gap: 1rem;
+        align-items: stretch;
     }
 }

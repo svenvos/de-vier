@@ -25,7 +25,7 @@ export default function Calendar() {
     return (
         <main>
             <div className="container">
-                <h1 className="font-size-32">Evenementen agenda</h1>
+                <h1 className="font-size-32 event-header">Evenementen agenda</h1>
                 <div className="events-container">
                     {eventElements}
                 </div>

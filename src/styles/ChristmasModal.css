@@ -43,3 +43,9 @@
 .buttons .btn {
     font-size: 0.75rem;
 }
+
+@media (min-width: 768px) {
+    .christmas-modal {
+        width: 450px;
+    }
+}
