@@ -155,7 +155,13 @@
 }
 
 /* Media screens */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../assets/hero-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
     .image-grid-item {
         flex: 0 0 65%;
     }
