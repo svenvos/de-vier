@@ -47,6 +47,9 @@
 }
 
 .highlight img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
     margin-bottom: 1.25rem;
 }
 
@@ -162,6 +165,22 @@
         background-position: center;
     }
 
+    .hero .txt-container {
+        padding: 0 1rem 3rem;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .highlights {
+        padding: 3rem 3rem 0;
+        flex-direction: row;
+    }
+
+    .highlight {
+        flex: 1;
+    }
+
     .image-grid-item {
         flex: 0 0 65%;
     }
@@ -173,23 +192,11 @@
     .image-grid-item p, .image-grid-item a {
         padding-left: 2rem;
     }
-    
-    .hero .txt-container {
-        padding: 0 1rem 3rem;
-        justify-content: flex-end;
-        align-items: flex-start;
-        gap: 2rem;
-    }
 }
 
 @media (min-width: 1024px) {
     .hero, .hero .txt-container {
         height: 85vh;
-    }
-
-    .highlights {
-        padding: 3rem 3rem 0;
-        flex-direction: row;
     }
 
     .booking-cta-container {
