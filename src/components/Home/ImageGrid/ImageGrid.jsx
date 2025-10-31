@@ -15,7 +15,7 @@ export default function ImageGrid() {
                     />
                 </div>
                 <p className="font-size-18">{imageGridItem.supportingText}</p>
-                <Link to={imageGridItem.linkTo}>{imageGridItem.btnTxt}</Link>
+                {imageGridItem.linkTo && <Link to={imageGridItem.linkTo}>{imageGridItem.btnTxt}</Link>}
             </ImageCard>
         );
     });

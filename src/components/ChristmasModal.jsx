@@ -33,7 +33,7 @@ export default function ChristmasModal() {
             </div>
             <div className="christmas-modal-content">
                 <h2 className="font-size-32 font-weight-600 txt-center color-light">Kerst bij De Vier Jaargetijden</h2>
-                <p className="font-size-18 txt-center color-light">
+                <p className="txt-center color-light font-manrope">
                     Laat je deze kerst verwennen met een sfeervol diner vol culinaire verrassingen.
                     Geniet van heerlijke gerechten, een warme ambiance en samen zijn met de mensen die je liefhebt.
                     Reserveer tijdig en beleef een onvergetelijke kerst bij ons!

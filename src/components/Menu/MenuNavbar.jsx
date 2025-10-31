@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import isSeasonalPeriod from "../../utils/dateUtils.js";
+import { isSeasonalPeriod } from "../../utils/dateUtils.js";
 
 export default function MenuNavbar() {
     return (

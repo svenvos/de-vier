@@ -1,16 +1,7 @@
 import { nanoid } from "nanoid";
-import bandNight from "../assets/events/bandjes-avond.jpg";
 import tigerClub from "../assets/events/tigerclub.jpg";
 
 export const events = [
-    {
-        id: nanoid(),
-        title: "Bandjesavond",
-        date: "25 oktober 2025",
-        description: "Geniet van een avond livemuziek van No Brakes",
-        startingTime: "22:00",
-        poster: bandNight
-    },
     {
         id: nanoid(),
         title: "Tiger Club",

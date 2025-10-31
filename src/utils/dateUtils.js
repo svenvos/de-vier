@@ -1,7 +1,8 @@
-export default function isSeasonalPeriod() {
-    const now = new Date();
-    const currentMonth = now.getMonth() + 1;
-    const currentDay = now.getDate();
+const now = new Date();
+const currentMonth = now.getMonth() + 1;
+const currentDay = now.getDate();
+
+export function isSeasonalPeriod() {
     
     if (currentMonth === 10 && currentDay >= 1) {
         return true;
@@ -16,4 +17,12 @@ export default function isSeasonalPeriod() {
     }
     
     return false;
+}
+
+export function is23thOfNovember() {
+    if (currentMonth === 11 && currentDay >= 23) {
+        return false;
+    }
+
+    return true;
 }

@@ -56,6 +56,11 @@ button {
 }
 
 /* Utility */
+/* Font family */
+.font-manrope {
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+}
+
 /* Font sizes */
 .font-size-14 {
     font-size: 0.875rem;

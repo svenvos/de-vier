@@ -49,9 +49,9 @@ export default function OpeningHours({ className }) {
             <p className={`font-size-20 font-weight-600 ${className ? className : ""}`} key={item.id}>{item.day}:
                 {
                     item.opening ? (
-                        <span className={`font-size-16 font-weight-400 ${className ? className : ""}`}>{item.opening}-{item.closing}</span>
+                        <span className={`font-size-16 font-weight-400 font-manrope ${className ? className : ""}`}>{item.opening}-{item.closing}</span>
                     ) : (
-                        <span className={`font-size-16 font-weight-400 ${className ? className : ""}`}>Gesloten</span>
+                        <span className={`font-size-16 font-weight-400 font-manrope ${className ? className : ""}`}>Gesloten*</span>
                     )
                 }
             </p>
@@ -61,6 +61,7 @@ export default function OpeningHours({ className }) {
     return (
             <div className="opening-hours">
                 {openingHourElements}
+                <p className="opening-hours-footnote color-light font-manrope">* In overleg geopend voor groepsarrangementen</p>
             </div>
     );
 }

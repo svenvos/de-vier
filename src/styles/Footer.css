@@ -32,6 +32,11 @@ footer {
     align-items: center;
 }
 
+.opening-hours-footnote {
+    margin-top: 0.5rem;
+    max-width: 300px;
+}
+
 .icons {
     display: flex;
     gap: 1rem;

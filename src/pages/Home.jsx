@@ -6,7 +6,7 @@ import BookYourTable from "../components/Home/BookYourTable.jsx";
 import AboutUs from "../components/Home/AboutUs.jsx";
 import ChristmasModal from "../components/ChristmasModal.jsx";
 import { createContext } from "react";
-import isSeasonalPeriod from "../utils/dateUtils.js";
+import { isSeasonalPeriod } from "../utils/dateUtils.js";
 import { openWidget } from "../utils/widgetUtils.js";
 
 export const HomeContext = createContext();
