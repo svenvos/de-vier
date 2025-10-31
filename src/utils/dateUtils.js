@@ -1,6 +1,7 @@
 const now = new Date();
 const currentMonth = now.getMonth() + 1;
 const currentDay = now.getDate();
+const currentYear = now.getFullYear();
 
 export function isSeasonalPeriod() {
     
@@ -20,7 +21,7 @@ export function isSeasonalPeriod() {
 }
 
 export function is23thOfNovember() {
-    if (currentMonth === 11 && currentDay >= 23) {
+    if (currentYear === 2025 && currentMonth >= 11 && currentDay >= 23) {
         return false;
     }
 
