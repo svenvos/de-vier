@@ -35,6 +35,7 @@ footer {
 .opening-hours-footnote {
     margin-top: 0.5rem;
     max-width: 300px;
+    text-align: center;
 }
 
 .icons {
@@ -65,5 +66,9 @@ footer {
 
     .opening-hours, .address, .contact-details {
         align-items: flex-start;
+    }
+
+    .opening-hours-footnote {
+        text-align: left;
     }
 }
