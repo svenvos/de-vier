@@ -6,7 +6,7 @@ export default function OpeningHours({ className }) {
             id: nanoid(),
             day: "Maandag",
             opening: "12:00",
-            closing: "23:00"
+            closing: "22:00"
         },
         {
             id: nanoid(),
@@ -16,31 +16,31 @@ export default function OpeningHours({ className }) {
             id: nanoid(),
             day: "Woensdag",
             opening: "12:00",
-            closing: "23:00"
+            closing: "22:00"
         },
         {
             id: nanoid(),
             day: "Donderdag",
             opening: "12:00",
-            closing: "23:00"
+            closing: "22:00"
         },
         {
             id: nanoid(),
             day: "Vrijdag",
             opening: "12:00",
-            closing: "01:00"
+            closing: "23:00"
         },
         {
             id: nanoid(),
             day: "Zaterdag",
             opening: "12:00",
-            closing: "01:00"
+            closing: "23:00"
         },
         {
             id: nanoid(),
             day: "Zondag",
             opening: "12:00",
-            closing: "01:00"
+            closing: "22:00"
         }
     ];
 
