@@ -1,13 +1,13 @@
 import { nanoid } from "nanoid";
-import tigerClub from "../assets/events/tigerclub.jpg";
+import kiok from "../assets/events/kiok.jpeg";
 
 export const events = [
     {
         id: nanoid(),
-        title: "Tiger Club",
-        date: "9 november 2025",
-        description: "Geniet van een feestelijke avond met Clemens en Hans. Kaarten verkrijgbaar bij De Vier Jaargetijden, Goosen & aan de deur.",
-        startingTime: "16:00",
-        poster: tigerClub
+        title: "K.I.O.K. afterparty",
+        date: "20 december 2025",
+        description: "Kom 20 & 21 december naar Kerst In Oud Kampen en geniet van al het moois in de stad. Kampen is omgetoverd tot een groot kerstdorp en er is van alles te beleven. Uiteraard hebben wij zaterdag 20 december weer de ouderwetse KIOK afterparty met Jac & Berry!",
+        startingTime: "21:00",
+        poster: kiok
     }
 ];
