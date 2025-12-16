@@ -4,7 +4,6 @@ import morningBuffetImg from "../assets/imageGridImages/morning-buffet.jpg";
 import barImg from "../assets/imageGridImages/bar.jpg";
 import dinerbonImg from "../assets/imageGridImages/dinerbon.jpg";
 import christmasImg from "../assets/imageGridImages/christmas.jpg";
-import wildBrunch from "../assets/imageGridImages/wildbrunch.jpg";
 
 let imageGridData = [
     {
@@ -41,15 +40,6 @@ if (isSeasonalPeriod()) {
         supportingText: "Vier de feestdagen bij ons",
         btnTxt: "Bekijk ons kerstmenu",
         linkTo: "menu/christmas"
-    });
-}
-
-if (is23thOfNovember()) {
-    imageGridData.unshift({
-        id: nanoid(),
-        imageSrc: wildBrunch,
-        imageAlt: "Poster van de wild brunch.",
-        supportingText: "Geniet van een heerlijke wild & wijn brunch"
     });
 }
 
