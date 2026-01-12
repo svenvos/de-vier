@@ -1,11 +1,18 @@
 import { nanoid } from "nanoid";
-import { isSeasonalPeriod, is23thOfNovember } from "./dateUtils.js";
+import { isSeasonalPeriod } from "./dateUtils.js";
 import morningBuffetImg from "../assets/imageGridImages/morning-buffet.jpg";
 import barImg from "../assets/imageGridImages/bar.jpg";
 import dinerbonImg from "../assets/imageGridImages/dinerbon.jpg";
 import christmasImg from "../assets/imageGridImages/christmas.jpg";
+import wineBrunch from "../assets/imageGridImages/wine-brunch.jpg";
 
 let imageGridData = [
+    {
+        id: nanoid(),
+        imageSrc: wineBrunch,
+        imageAlt: "Voorbeeld van een heerlijk wijn brunch met verschillende soorten wijn en hapjes.",
+        supportingText: "Geniet van onze wijn brunch op 1 februari"
+    },
     {
         id: nanoid(),
         imageSrc: dinerbonImg,
