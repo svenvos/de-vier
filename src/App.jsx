@@ -14,6 +14,7 @@ import DinnerMenu from "./components/Menu/DinnerMenu.jsx";
 import LunchMenu from "./components/Menu/LunchMenu.jsx";
 import DessertsMenu from "./components/Menu/DessertsMenu.jsx";
 import ChristmasMenu from "./components/Menu/ChristmasMenu.jsx";
+import ValentineMenu from "./components/Menu/ValentineMenu.jsx";
 import Jobs from "./pages/Jobs.jsx";
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
                     <Route path="lunch" element={<LunchMenu />} />
                     <Route path="desserts" element={<DessertsMenu />} />
                     <Route path="christmas" element={<ChristmasMenu />} />
+                    <Route path="valentine" element={<ValentineMenu />} />
                 </Route>
                 <Route path="buffet" element={<Buffet />} />
                 <Route path="dinerbon" element={<Dinerbon />} />

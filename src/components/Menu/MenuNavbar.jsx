@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import { isSeasonalPeriod } from "../../utils/dateUtils.js";
+import { isSeasonalPeriod, isValentinePeriod } from "../../utils/dateUtils.js";
 
 export default function MenuNavbar() {
     return (
@@ -9,6 +9,9 @@ export default function MenuNavbar() {
             <NavLink to="desserts" className={({isActive}) => isActive ? "active" : ""}>Desserts</NavLink>
             {isSeasonalPeriod() && (
                 <NavLink to="christmas" className={({isActive}) => isActive ? "active" : ""}>Kerstmenu</NavLink>
+            )}
+            {isValentinePeriod() && (
+                <NavLink to="valentine" className={({isActive}) => isActive ? "active" : ""}>Valentijn</NavLink>
             )}
         </nav>
     );
