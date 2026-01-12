@@ -5,8 +5,9 @@ import ImageGrid from "../components/Home/ImageGrid/ImageGrid.jsx";
 import BookYourTable from "../components/Home/BookYourTable.jsx";
 import AboutUs from "../components/Home/AboutUs.jsx";
 import ChristmasModal from "../components/ChristmasModal.jsx";
+import ValentineModal from "../components/ValentineModal.jsx";
 import { createContext } from "react";
-import { isSeasonalPeriod } from "../utils/dateUtils.js";
+import { isSeasonalPeriod, isValentinePeriod } from "../utils/dateUtils.js";
 import { openWidget } from "../utils/widgetUtils.js";
 
 export const HomeContext = createContext();
@@ -15,7 +16,7 @@ export default function Home() {
     return (
         <HomeContext.Provider value={{openWidget}}>
             <main>
-                {isSeasonalPeriod() && <ChristmasModal />}
+                {isSeasonalPeriod() ? <ChristmasModal /> : isValentinePeriod() ? <ValentineModal /> : null}
                 <Hero />
                 <HighlightsSection />
                 <ImageGrid />

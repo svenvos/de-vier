@@ -20,6 +20,18 @@ export function isSeasonalPeriod() {
     return false;
 }
 
+export function isValentinePeriod() {
+    if (currentMonth === 1 && currentDay >= 1) {
+        return true;
+    }
+    
+    if (currentMonth === 2 && currentDay <= 15) {
+        return true;
+    }
+    
+    return false;
+}
+
 export function is23thOfNovember() {
     if (currentYear === 2025 && currentMonth >= 11 && currentDay >= 23) {
         return false;
