@@ -1,13 +1,22 @@
 import { nanoid } from "nanoid";
-import kiok from "../assets/events/kiok.jpeg";
+import pasen from "../assets/events/pasen.jpg";
+import lenteWijn from "../assets/events/lentewijn.jpg";
 
 export const events = [
     {
         id: nanoid(),
-        title: "K.I.O.K. afterparty",
-        date: "20 december 2025",
-        description: "Kom 20 & 21 december naar Kerst In Oud Kampen en geniet van al het moois in de stad. Kampen is omgetoverd tot een groot kerstdorp en er is van alles te beleven. Uiteraard hebben wij zaterdag 20 december weer de ouderwetse KIOK afterparty met Jac & Berry!",
-        startingTime: "21:00",
-        poster: kiok
+        title: "Vier Pasen bij De Vier!",
+        date: "5 april 2026",
+        description: "Kom op eerste paasdag genieten van een heerlijke Paasbrunch met diverse soorten broodjes, luxe beleg bestaande uit vis & vlees en natuurlijk eieren! Reserveren is vanaf nu mogelijk via de website, telefonisch of via de mail! Reserveren voor een groep is uiteraard ook mogelijk!",
+        startingTime: "11:00",
+        poster: pasen
+    },
+    {
+        id: nanoid(),
+        title: "LenteWijn Zondagse Brunchproeverij!",
+        date: "31 mei 2026",
+        description: "Kom zondag 31 maart genieten van 12 heerlijke proefwijnen in combinatie met 6 lentegerechtjes. In samenwerking met @wijnwereldnederland laten wij u heerlijke combinaties proeven! Wilt u erbij zijn? Reserveren kan vanaf nu via info@devier-kampen.nl of via 038- 333 34 63",
+        startingTime: "13:00",
+        poster: lenteWijn
     }
 ];
