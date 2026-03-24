@@ -4,6 +4,13 @@ import "../styles/Calendar.css";
 const isLocalDevHost = ["localhost", "127.0.0.1"].includes(window.location.hostname);
 const API_BASE = isLocalDevHost ? "http://localhost:3001" : "";
 
+/**
+ * Render the events calendar and load event data from the API when the component mounts.
+ *
+ * Renders a header and conditionally displays loading, error, or empty-state messages. When events are available, renders a list of event cards showing title, description, date, starting time, and an optional poster image.
+ *
+ * @returns {JSX.Element} The Calendar component UI.
+ */
 export default function Calendar() {
     const [events, setEvents] = useState([]);
     const [loading, setLoading] = useState(true);
