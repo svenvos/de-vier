@@ -5,6 +5,11 @@ const CACHE_TTL = 10 * 60 * 1000; // 10 minutes
 
 let cache = { data: null, fetchedAt: 0 };
 
+/**
+ * Strip HTML from a string, convert <br> tags to newlines, decode common HTML entities, and trim whitespace.
+ * @param {string|any} html - Input that may contain HTML; falsy values become an empty string.
+ * @returns {string} The cleaned text with HTML tags removed, `<br>` converted to newlines, common entities decoded, and surrounding whitespace trimmed.
+ */
 function stripHtml(html) {
     return (html || "")
         .replace(/<br\s*\/?>/gi, "\n")
@@ -18,12 +23,29 @@ function stripHtml(html) {
         .trim();
 }
 
+/**
+ * Format a date value as a Dutch long date (e.g., "1 januari 2026").
+ * @param {string|Date|number} dateStr - A value parseable by `Date`. If falsy, an empty string is returned.
+ * @returns {string} The date formatted for `nl-NL` with day, month (long) and year, or `""` when `dateStr` is falsy.
+ */
 function formatDutchDate(dateStr) {
     if (!dateStr) return "";
     const d = new Date(dateStr);
     return d.toLocaleDateString("nl-NL", { day: "numeric", month: "long", year: "numeric" });
 }
 
+/**
+ * Convert a Google Calendar event item into a normalized event object for the frontend.
+ *
+ * @param {Object} item - Google Calendar event object (an item from the Events API).
+ * @returns {{id: string, title: string, date: string, startingTime: string, description: string, poster: string|null}} Normalized event with:
+ *  - `id`: event identifier,
+ *  - `title`: event summary or empty string,
+ *  - `date`: Dutch-formatted date,
+ *  - `startingTime`: Dutch-formatted time or `"Hele dag"` for all-day events,
+ *  - `description`: plain-text description with HTML removed and poster URL line removed if present,
+ *  - `poster`: extracted poster URL when the last non-empty description line is a standalone `https://...` URL, otherwise `null`.
+ */
 function transformEvent(item) {
     const hasTime = !!item.start?.dateTime;
     const startRaw = item.start?.dateTime || item.start?.date || "";
@@ -55,6 +77,18 @@ function transformEvent(item) {
     };
 }
 
+/**
+ * Fetches upcoming events from the configured Google Calendar and returns them in a normalized shape.
+ *
+ * @returns {Array<{id: string, title: string, date: string, startingTime: string, description: string, poster: string|null}>} An array of event objects where:
+ *  - `id`: event identifier,
+ *  - `title`: event title (or empty string),
+ *  - `date`: Dutch-formatted date string,
+ *  - `startingTime`: Dutch-formatted time or `"Hele dag"` for all-day events,
+ *  - `description`: cleaned plain-text description,
+ *  - `poster`: URL extracted from the last line of the description or `null`.
+ * @throws {Error} If `GOOGLE_CALENDAR_API_KEY` or `GOOGLE_CALENDAR_ID` is missing, or if the Google Calendar API responds with a non-OK status (error message includes HTTP status and response body).
+ */
 async function fetchFromGoogleCalendar() {
     if (!API_KEY || !CALENDAR_ID) {
         throw new Error("Missing GOOGLE_CALENDAR_API_KEY or GOOGLE_CALENDAR_ID in environment");
@@ -74,6 +108,14 @@ async function fetchFromGoogleCalendar() {
     return (json.items || []).map(transformEvent);
 }
 
+/**
+ * Retrieve upcoming calendar events, using an in-memory cache to avoid repeated upstream requests.
+ *
+ * If cached events exist and were fetched less than the configured TTL ago, the cached list is returned.
+ * Otherwise the function fetches fresh events, updates the cache timestamp, and returns the new list.
+ *
+ * @returns {Array<Object>} An array of event objects with shape `{ id, title, date, startingTime, description, poster }`.
+ */
 async function getEvents() {
     const now = Date.now();
     if (cache.data && now - cache.fetchedAt < CACHE_TTL) {
