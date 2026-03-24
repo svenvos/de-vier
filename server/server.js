@@ -64,7 +64,17 @@ async function fetchFromGoogleCalendar() {
     const calId = encodeURIComponent(CALENDAR_ID);
     const url = `https://www.googleapis.com/calendar/v3/calendars/${calId}/events?key=${API_KEY}&timeMin=${timeMin}&singleEvents=true&orderBy=startTime&maxResults=50`;
 
-    const res = await fetch(url);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 8000);
+    let res;
+    try {
+        res = await fetch(url, { signal: controller.signal });
+    } catch (err) {
+        clearTimeout(timeoutId);
+        if (err.name === "AbortError") throw new Error("Google Calendar fetch timed out");
+        throw err;
+    }
+    clearTimeout(timeoutId);
     if (!res.ok) {
         const body = await res.text();
         throw new Error(`Google Calendar API responded ${res.status}: ${body}`);
@@ -92,7 +102,8 @@ Bun.serve({
 
         const baseHeaders = { "Content-Type": "application/json" };
         // Allow CORS for local development only
-        if (origin.includes("localhost") || origin.includes("127.0.0.1")) {
+        const isLocalOrigin = /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i.test(origin);
+        if (isLocalOrigin) {
             baseHeaders["Access-Control-Allow-Origin"] = origin;
             baseHeaders["Access-Control-Allow-Methods"] = "GET, OPTIONS";
             baseHeaders["Access-Control-Allow-Headers"] = "Content-Type";

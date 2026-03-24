@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import "../styles/Calendar.css";
 
-const API_BASE = window.location.hostname === "localhost" ? "http://localhost:3001" : "";
+const isLocalDevHost = ["localhost", "127.0.0.1"].includes(window.location.hostname);
+const API_BASE = isLocalDevHost ? "http://localhost:3001" : "";
 
 export default function Calendar() {
     const [events, setEvents] = useState([]);
@@ -15,7 +16,7 @@ export default function Calendar() {
                 return res.json();
             })
             .then(data => {
-                setEvents(data);
+                setEvents(Array.isArray(data) ? data : []);
                 setLoading(false);
             })
             .catch(() => {
