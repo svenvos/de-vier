@@ -17,23 +17,26 @@ export default function DinnerMenu() {
                     menukaart. Probeer het later opnieuw
                 </p>
             ) : (
-                <HTMLFlipBook width={350} height={500}>
-                    {data.data.map((menu) => {
-                        return (
-                            <img
-                                src={`http://localhost:1337${menu.MenukaartFoto.url}`}
-                                key={menu.id}
-                                alt="Onze dinnerkaart"
-                                loading="lazy"
-                                decoding="async"
-                            />
-                        );
-                    })}
-                </HTMLFlipBook>
+                <>
+                    <HTMLFlipBook width={350} height={500}>
+                        {data.data.map((menu) => {
+                            return (
+                                <img
+                                    src={`http://localhost:1337${menu.MenukaartFoto.url}`}
+                                    key={menu.id}
+                                    alt="Onze dinnerkaart"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            );
+                        })}
+                    </HTMLFlipBook>
+                    <p className="footnote">
+                        * Klik op de foto's om door het volledige menu te
+                        scrollen.
+                    </p>
+                </>
             )}
-            <p className="footnote">
-                * Klik op de foto's om door het volledige menu te scrollen.
-            </p>
         </div>
     );
 }
